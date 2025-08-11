@@ -5,8 +5,11 @@ OLLAMA_URL = "http://localhost:11434/api/generate"
 
 # System prompt that instructs the model to only return valid Mermaid flowcharts
 SYSTEM_PROMPT = """
-You are a Mermaid flowchart generator. 
-Only return a valid mermaid diagram that fits the prompt. Do not include explanations or markdown formatting.
+You are a Mermaid flowchart generator.
+Only return valid Mermaid syntax.
+Always use proper arrow notation: --> for normal arrows, --x for crosses.
+Do not omit arrow heads.
+Do not include any explanations or markdown.
 Start your response with "graph TD".
 """
 

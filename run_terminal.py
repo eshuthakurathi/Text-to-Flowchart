@@ -5,7 +5,7 @@ import uuid
 
 def main():
   # Ask for user prompt in terminal
-  prompt = input("📥 Enter your flowchart description: ").strip()
+  prompt = input("Enter your flowchart description: ").strip()
   
   if not prompt:
     print("❌ No input provided.")
@@ -13,7 +13,7 @@ def main():
 
   # Step 1: Generate mermaid code
   mermaid_code = generate_response(prompt)
-  print("\n🧠 Mermaid code generated:\n")
+  print("\n Mermaid code generated:\n")
   print(mermaid_code)
 
   # Step 2: Create output directory if not exists
