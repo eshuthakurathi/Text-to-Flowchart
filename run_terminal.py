@@ -25,6 +25,5 @@ def main():
   image_path = os.path.join(output_dir, image_filename)
   generate_flowchart(mermaid_code, image_path)
 
-
 if __name__ == "__main__":
   main()
